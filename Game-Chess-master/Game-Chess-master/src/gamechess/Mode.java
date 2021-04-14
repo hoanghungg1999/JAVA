@@ -34,7 +34,6 @@ public class Mode extends javax.swing.JFrame {
 
         btn_player_player = new javax.swing.JButton();
         btn_player_AI = new javax.swing.JButton();
-        btn_playonline = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mode");
@@ -53,13 +52,6 @@ public class Mode extends javax.swing.JFrame {
             }
         });
 
-        btn_playonline.setText("Play Online");
-        btn_playonline.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_playonlineActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -67,7 +59,6 @@ public class Mode extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_playonline, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_player_AI)
                     .addComponent(btn_player_player, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 33, Short.MAX_VALUE))
@@ -79,9 +70,7 @@ public class Mode extends javax.swing.JFrame {
                 .addComponent(btn_player_player)
                 .addGap(18, 18, 18)
                 .addComponent(btn_player_AI)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_playonline)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
@@ -97,11 +86,6 @@ public class Mode extends javax.swing.JFrame {
         mainJFrame.newGamePlayrtAndAI();
         this.setVisible(false);
     }//GEN-LAST:event_btn_player_AIActionPerformed
-
-    private void btn_playonlineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_playonlineActionPerformed
-        new Connect(mainJFrame).setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btn_playonlineActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,6 +126,5 @@ public class Mode extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_player_AI;
     private javax.swing.JButton btn_player_player;
-    private javax.swing.JButton btn_playonline;
     // End of variables declaration//GEN-END:variables
 }

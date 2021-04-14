@@ -27,7 +27,6 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btn_playonline" min="-2" pref="127" max="-2" attributes="0"/>
                   <Component id="btn_player_AI" min="-2" max="-2" attributes="0"/>
                   <Component id="btn_player_player" min="-2" pref="127" max="-2" attributes="0"/>
               </Group>
@@ -42,9 +41,7 @@
               <Component id="btn_player_player" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btn_player_AI" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btn_playonline" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="61" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -64,14 +61,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_player_AIActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="btn_playonline">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Play Online"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_playonlineActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

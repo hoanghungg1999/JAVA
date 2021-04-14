@@ -74,7 +74,7 @@ public class Main extends javax.swing.JFrame {
     public static boolean checkRookRightWhiteMove = false;
     public static boolean checkRookRightBlackMove = false;
     public TheardAI aI;
-    public PlayOnline playonline;
+    
       //--------------------------------------------------------------------------
     /**
      * Creates new form Main
@@ -124,10 +124,7 @@ public class Main extends javax.swing.JFrame {
                             BoardChess.turn = Piece.White;
                             newGamePlayOnline();
                             break;
-                        case Request.ONLINE_PLAYER:
-                            PlayOnline.listPlayer = req.getPlayerList();
-                            playonline.LoadListPlayerOnline();
-                            break;
+                        
                         case Request.MOVE_CHESS:
                             System.err.println("CLIENT MOVE CHESS");
                             Main.Mymain.chessBoard.removeAll();
@@ -187,7 +184,7 @@ public class Main extends javax.swing.JFrame {
                         case Request.SURRENDER:
                             JOptionPane.showMessageDialog(null, "ENEMY SURRENDER\n" + "YOU WIN");
                             Main.Mymain.loadHome();
-                            Main.Mymain.playonline.setVisible(false);
+                           
                             break;
                         case Request.PLAYING:
                             JOptionPane.showMessageDialog(null, "Player " +
@@ -763,7 +760,7 @@ public class Main extends javax.swing.JFrame {
         if(Mode == PLAYER_ONLINE){
            Client.requestSurrener();
            loadHome();
-           Main.Mymain.playonline.setVisible(false);
+           
         }
         else{
             JOptionPane.showMessageDialog(null, "Operation fail");
