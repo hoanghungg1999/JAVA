@@ -102,7 +102,7 @@
         <Component class="javax.swing.JButton" name="btn_home">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/Home.png"/>
+              <Image iconType="3" name="/image/ihome.png"/>
             </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -115,7 +115,7 @@
         <Component class="javax.swing.JButton" name="btn_open">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/open.png"/>
+              <Image iconType="3" name="/image/iofile.png"/>
             </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -128,7 +128,7 @@
         <Component class="javax.swing.JButton" name="btn_newGame">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/new.png"/>
+              <Image iconType="3" name="/image/isgame.jpg"/>
             </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -141,7 +141,7 @@
         <Component class="javax.swing.JButton" name="btn_saveAs">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/saveas.png"/>
+              <Image iconType="3" name="/image/isave.png"/>
             </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -151,20 +151,10 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_saveAsActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_save">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/save.png"/>
-            </Property>
-            <Property name="focusable" type="boolean" value="false"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="btn_Undo">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/undo.png"/>
+              <Image iconType="3" name="/image/iundo.png"/>
             </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -174,7 +164,7 @@
         <Component class="javax.swing.JButton" name="btn_Redo">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/image/redo.jpg"/>
+              <Image iconType="3" name="/image/iredo_1.png"/>
             </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -225,7 +215,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btn_surr">
           <Properties>
-            <Property name="text" type="java.lang.String" value="SURRENDER"/>
+            <Property name="text" type="java.lang.String" value="&#x110;&#x1ea7;u H&#xe0;ng"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_surrActionPerformed"/>
@@ -234,7 +224,7 @@
         <Component class="javax.swing.JLabel" name="lb_turn">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="PLAY ONLINE"/>
+            <Property name="text" type="java.lang.String" value="L&#x1b0;&#x1ee3;t &#x111;i"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>

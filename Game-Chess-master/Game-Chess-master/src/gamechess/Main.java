@@ -85,7 +85,7 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         chessBoard.removeAll();
         this.getContentPane().setBackground( Color.WHITE );
-        ImageIcon icon = new ImageIcon("image/MAIN.jpg");
+        ImageIcon icon = new ImageIcon("image/main.png");
         JLabel label = new JLabel(); 
         label.setIcon(icon);
         chessBoard.add(label);
@@ -287,7 +287,6 @@ public class Main extends javax.swing.JFrame {
         btn_open = new javax.swing.JButton();
         btn_newGame = new javax.swing.JButton();
         btn_saveAs = new javax.swing.JButton();
-        btn_save = new javax.swing.JButton();
         btn_Undo = new javax.swing.JButton();
         btn_Redo = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -312,7 +311,7 @@ public class Main extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
-        btn_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Home.png"))); // NOI18N
+        btn_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/ihome.png"))); // NOI18N
         btn_home.setFocusable(false);
         btn_home.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_home.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -323,7 +322,7 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_home);
 
-        btn_open.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/open.png"))); // NOI18N
+        btn_open.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/iofile.png"))); // NOI18N
         btn_open.setFocusable(false);
         btn_open.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_open.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -334,7 +333,7 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_open);
 
-        btn_newGame.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/new.png"))); // NOI18N
+        btn_newGame.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/isgame.jpg"))); // NOI18N
         btn_newGame.setFocusable(false);
         btn_newGame.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_newGame.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -345,7 +344,7 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_newGame);
 
-        btn_saveAs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/saveas.png"))); // NOI18N
+        btn_saveAs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/isave.png"))); // NOI18N
         btn_saveAs.setFocusable(false);
         btn_saveAs.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_saveAs.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -356,19 +355,13 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar1.add(btn_saveAs);
 
-        btn_save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/save.png"))); // NOI18N
-        btn_save.setFocusable(false);
-        btn_save.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_save.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(btn_save);
-
-        btn_Undo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/undo.png"))); // NOI18N
+        btn_Undo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/iundo.png"))); // NOI18N
         btn_Undo.setFocusable(false);
         btn_Undo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_Undo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btn_Undo);
 
-        btn_Redo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/redo.jpg"))); // NOI18N
+        btn_Redo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/iredo_1.png"))); // NOI18N
         btn_Redo.setFocusable(false);
         btn_Redo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_Redo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -378,7 +371,7 @@ public class Main extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        btn_surr.setText("SURRENDER");
+        btn_surr.setText("Đầu Hàng");
         btn_surr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_surrActionPerformed(evt);
@@ -386,7 +379,7 @@ public class Main extends javax.swing.JFrame {
         });
 
         lb_turn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lb_turn.setText("PLAY ONLINE");
+        lb_turn.setText("Lượt đi");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -977,7 +970,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton btn_home;
     private javax.swing.JButton btn_newGame;
     private javax.swing.JButton btn_open;
-    private javax.swing.JButton btn_save;
     private javax.swing.JButton btn_saveAs;
     private javax.swing.JButton btn_surr;
     public javax.swing.JPanel chessBoard;
