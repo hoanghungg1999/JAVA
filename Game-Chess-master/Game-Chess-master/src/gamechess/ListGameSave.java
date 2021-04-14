@@ -97,7 +97,7 @@ public class ListGameSave extends javax.swing.JFrame {
         if(list != null){
             for(int i = 0; i < list.size(); i++){
                  model.addRow(new Object[]{list.get(i),
-                     getDatetimeOfFile("savegame\\" + list.get(i) + ".txt"),
+                     getDatetimeOfFile("D:\\" + list.get(i) + ".txt"),
                      "null"});
             }
         }
@@ -117,7 +117,7 @@ public class ListGameSave extends javax.swing.JFrame {
         catch(Exception ex){}
         try{
             String line;
-           br = new FileInputStream("savegame\\list.txt");
+           br = new FileInputStream("D:\\list.txt");
            InputStreamReader isr = new InputStreamReader(br, Charset.forName("UTF-8"));
              BufferedReader brt = new BufferedReader(isr);
              while((line = brt.readLine()) != null){
