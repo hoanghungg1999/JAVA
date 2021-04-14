@@ -855,10 +855,10 @@ public class Main extends javax.swing.JFrame {
         capacity = CHALLENGE;
         Mode = PLAYER_PLAYER; 
         if(BoardChess.turn == Piece.Black){
-            lb_turn.setText("Turn of Black");
+            lb_turn.setText("Lượt của Đen");
         }
         if(BoardChess.turn == Piece.White){
-            lb_turn.setText("Turn of White");
+            lb_turn.setText("Lượt của Trắng");
         }
         chessBoard.add(BoardChess.paintChessBox(new EmptyCell(-1, new Coordinate(-1, -1)),null));
         chessBoard.setVisible(true);
@@ -871,7 +871,7 @@ public class Main extends javax.swing.JFrame {
         Mode = PLAYER_COMPUTER;
         waitAI = true;
         this.aI = new TheardAI(this,Piece.Black);
-        JOptionPane.showMessageDialog(null, "You are a white player");
+        JOptionPane.showMessageDialog(null, "Bạn sẽ bắt đầu bằng quân trắng");
         chessBoard.add(BoardChess.paintChessBox(new EmptyCell(-1, new Coordinate(-1, -1)),null));
         chessBoard.setVisible(true);
         this.setVisible(true);
