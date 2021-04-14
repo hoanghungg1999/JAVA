@@ -359,6 +359,11 @@ public class Main extends javax.swing.JFrame {
         btn_Undo.setFocusable(false);
         btn_Undo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_Undo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btn_Undo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_UndoActionPerformed(evt);
+            }
+        });
         jToolBar1.add(btn_Undo);
 
         btn_Redo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/iredo_1.png"))); // NOI18N
@@ -761,6 +766,11 @@ public class Main extends javax.swing.JFrame {
 //        
 
     }//GEN-LAST:event_btn_surrActionPerformed
+
+    private void btn_UndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_UndoActionPerformed
+        BoardChess.turn = Piece.White;
+        
+    }//GEN-LAST:event_btn_UndoActionPerformed
 
     public void checkResult(){
         if(BoardChess.checkResult() == 1){

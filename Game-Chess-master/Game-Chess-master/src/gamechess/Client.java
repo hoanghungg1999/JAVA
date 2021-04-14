@@ -34,55 +34,55 @@ public class Client {
 
     public static synchronized void requestPlayerList(){
         Request req = new Request(Request.ONLINE_PLAYER);
-        sendRequest(req);
+//        sendRequest(req);
     }
     
     public static void requestSurrener(){
         Request req = new Request(Request.SURRENDER);
-        sendRequest(req);
+//        sendRequest(req);
     }
     
     public static void requestMoveChess(Coordinate start, Coordinate target){
         Request req = new Request(Request.MOVE_CHESS);
         req.setStart(start);
         req.setTarget(target);
-        sendRequest(req);
+//        sendRequest(req);
     }
     
     public static void requestCrown(Coordinate coordinate, int CrownPiece){
         Request req = new Request(Request.CROWN);
         req.setCoordinateCrown(coordinate);
         req.setCrown(CrownPiece);
-        sendRequest(req);
+//        sendRequest(req);
     }
     public static void requestRefuseChallenge(String enemy){
         Request req = new Request(Request.REFUSE_CHALLENGE);
         req.setIPChallenge(enemy);
-        sendRequest(req);
+//        sendRequest(req);
     }
 
 
     public static void requestAcceptChallenge(String enemy){
         Request req = new Request(Request.ACCEPT_CHALLENGE);
         req.setIPChallenge(enemy);
-        sendRequest(req);
+//        sendRequest(req);
     }
 
     public static void requestChallenge(String IPChallenge){
         Request req = new Request(Request.SEND_CHALLENGE);
         req.setIPChallenge(IPChallenge);
-        sendRequest(req);
+//        sendRequest(req);
     }
     
     public static void requestPlaying(){
         Request req = new Request(Request.PLAYING);
-        sendRequest(req);
+//        sendRequest(req);
     }
 
     public static void RequestDisConnect(String IPDisConnect){
         Request req = new Request(Request.DISCONNECT);
         req.setIPChallenge(IPDisConnect);
-        sendRequest(req);
+//        sendRequest(req);
     }
     public static Request response(){
         Request req = null;
@@ -98,15 +98,15 @@ public class Client {
     
     
 
-    private static void sendRequest(Request request) {
-        try{
-            ObjectOutputStream obj = new
-                    ObjectOutputStream(server.getOutputStream());
-            obj.writeObject(request);
-            obj.flush();
-        }
-        catch(Exception ex){ex.printStackTrace();}
-    }
+//    private static void sendRequest(Request request) {
+//        try{
+//            ObjectOutputStream obj = new
+//                    ObjectOutputStream(server.getOutputStream());
+//            obj.writeObject(request);
+//            obj.flush();
+//        }
+//        catch(Exception ex){ex.printStackTrace();}
+//    }
 
 
 }
