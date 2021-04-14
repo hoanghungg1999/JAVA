@@ -806,9 +806,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_RedoActionPerformed
 
 
-    private void btn_UndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_UndoActionPerformed
-       
-    }//GEN-LAST:event_btn_UndoActionPerformed
+    
 
     public void checkResult(){
         if(BoardChess.checkResult() == 1){
