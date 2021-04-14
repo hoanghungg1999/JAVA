@@ -110,10 +110,10 @@ public class BoardChess implements  Serializable{
         }
         
         if(BoardChess.turn == Piece.Black){
-             Main.Mymain.lb_turn.setText("Turn of Black");
+             Main.Mymain.lb_turn.setText("Lượt của Đen");
         }
          if(BoardChess.turn == Piece.White){
-             Main.Mymain.lb_turn.setText("Turn of White");
+             Main.Mymain.lb_turn.setText("Lượt của Trắng");
          }
          
          

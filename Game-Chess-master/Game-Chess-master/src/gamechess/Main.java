@@ -370,6 +370,11 @@ public class Main extends javax.swing.JFrame {
         btn_Redo.setFocusable(false);
         btn_Redo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_Redo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btn_Redo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_RedoActionPerformed(evt);
+            }
+        });
         jToolBar1.add(btn_Redo);
 
         jButton4.setText("jButton4");
@@ -768,9 +773,37 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_surrActionPerformed
 
     private void btn_UndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_UndoActionPerformed
-        BoardChess.turn = Piece.White;
+        chessBoard.removeAll();
+        BoardChess.initValue();
+        capacity = CHALLENGE;
+        Mode = PLAYER_PLAYER; 
+        if(BoardChess.turn == Piece.Black){
+            System.out.println("-1");
+        }
+        if(BoardChess.turn == Piece.White){
+            System.out.println("-2");
+        }
+        chessBoard.add(BoardChess.paintChessBox(new EmptyCell(-1, new Coordinate(-1, -1)),null));
+        chessBoard.setVisible(true);
+        this.setVisible(true);
         
     }//GEN-LAST:event_btn_UndoActionPerformed
+
+    private void btn_RedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RedoActionPerformed
+        chessBoard.removeAll();
+        BoardChess.initValue();
+        capacity = CHALLENGE;
+        Mode = PLAYER_PLAYER; 
+        if(BoardChess.turn == Piece.Black){
+            System.out.println("-1");
+        }
+        if(BoardChess.turn == Piece.White){
+            System.out.println("-2");
+        }
+        chessBoard.add(BoardChess.paintChessBox(new EmptyCell(-1, new Coordinate(-1, -1)),null));
+        chessBoard.setVisible(true);
+        this.setVisible(true);
+    }//GEN-LAST:event_btn_RedoActionPerformed
 
     public void checkResult(){
         if(BoardChess.checkResult() == 1){
