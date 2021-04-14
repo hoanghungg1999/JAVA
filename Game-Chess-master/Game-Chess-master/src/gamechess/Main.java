@@ -106,10 +106,10 @@ public class Main extends javax.swing.JFrame {
         listenner = new Thread( new Runnable(){
             private volatile boolean running = true;
 
-            public void terminate() {
-                System.out.println("stop listener");
-                running = false;
-            }
+//            public void terminate() {
+//                System.out.println("stop listener");
+//                running = false;
+//            }
             @Override
             public void run(){
                 while(running){
@@ -450,12 +450,12 @@ public class Main extends javax.swing.JFrame {
             pieceSelect.setCol(columBefor);
             
             // CHECK ONLINE
-            if(Mode == PLAYER_ONLINE){;
-                if(capacity == TO_BE_CHALLENGED){
-                    rowBefor = 7 - rowBefor;
-                    columBefor = 7 - columBefor;
-                }
-            }
+//            if(Mode == PLAYER_ONLINE){;
+//                if(capacity == TO_BE_CHALLENGED){
+//                    rowBefor = 7 - rowBefor;
+//                    columBefor = 7 - columBefor;
+//                }
+//            }
             
             // CHECK AI
             if(Mode == PLAYER_COMPUTER){
@@ -474,14 +474,14 @@ public class Main extends javax.swing.JFrame {
                 checkResult();
         
                 // PROCESS ONLINE
-                if(Mode == PLAYER_ONLINE){
-                    if(capacity == TO_BE_CHALLENGED){
-                        for(int i = 0; i < listCoordinate.size(); i++){
-                            listCoordinate.get(i).setRow(7 - listCoordinate.get(i).getRow());
-                            listCoordinate.get(i).setCol(7 - listCoordinate.get(i).getCol());
-                        }
-                    }
-                }
+//                if(Mode == PLAYER_ONLINE){
+//                    if(capacity == TO_BE_CHALLENGED){
+//                        for(int i = 0; i < listCoordinate.size(); i++){
+//                            listCoordinate.get(i).setRow(7 - listCoordinate.get(i).getRow());
+//                            listCoordinate.get(i).setCol(7 - listCoordinate.get(i).getCol());
+//                        }
+//                    }
+//                }
                 
                 chessBoard.add(BoardChess.paintChessBox(BoardChess.chessBoard[pieceSelect.getRow()]
                         [pieceSelect.getCol()],listCoordinate));
@@ -750,15 +750,15 @@ public class Main extends javax.swing.JFrame {
 
     private void btn_surrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_surrActionPerformed
        // SUR WHEN ONLINE
-        if(Mode == PLAYER_ONLINE){
-           Client.requestSurrener();
-           loadHome();
-           
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "Operation fail");
-        }
-        
+//        if(Mode == PLAYER_ONLINE){
+//           Client.requestSurrener();
+//           loadHome();
+//           
+//        }
+//        else{
+//            JOptionPane.showMessageDialog(null, "Operation fail");
+//        }
+//        
 
     }//GEN-LAST:event_btn_surrActionPerformed
 
@@ -870,7 +870,7 @@ public class Main extends javax.swing.JFrame {
         
         ObjectOutputStream out = null;
         try{
-             outlist = new BufferedWriter(new FileWriter("savegame\\list.txt", true));
+             outlist = new BufferedWriter(new FileWriter("D:\\list.txt", true));
              outlist.write(fileName + "\n");
         }
         catch(IOException EX){
@@ -884,7 +884,7 @@ public class Main extends javax.swing.JFrame {
         
         try{
             out = new ObjectOutputStream(new
-               FileOutputStream("savegame\\" + fileName + ".txt"));
+               FileOutputStream("D:\\" + fileName + ".txt"));
            
             //
             //save turn play
@@ -915,7 +915,7 @@ public class Main extends javax.swing.JFrame {
         ObjectInputStream obj = null;
         try{
             obj = new ObjectInputStream(new 
-                FileInputStream("savegame\\" + filename + ".txt"));
+                FileInputStream("D:\\" + filename + ".txt"));
             
               BoardChess temp = (BoardChess)obj.readObject();
               System.out.println(temp.chessBoard[0][0].getName());
