@@ -778,7 +778,7 @@ public class Main extends javax.swing.JFrame {
         capacity = CHALLENGE;
         Mode = PLAYER_PLAYER; 
         if(BoardChess.turn == Piece.Black){
-            System.out.println("-1");
+            
         }
         if(BoardChess.turn == Piece.White){
             System.out.println("-2");
