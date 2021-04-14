@@ -126,7 +126,7 @@ public class Main extends javax.swing.JFrame {
                             break;
                         
                         case Request.MOVE_CHESS:
-                            System.err.println("CLIENT MOVE CHESS");
+                            System.out.println("CLIENT MOVE CHESS");
                             Main.Mymain.chessBoard.removeAll();
                             System.out.println(req.getStart().getRow() + "-" + req.getStart().getCol());
                             System.out.println(req.getTarget().getRow() + "-" + req.getTarget().getCol());
